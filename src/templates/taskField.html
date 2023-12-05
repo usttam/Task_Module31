@@ -1,0 +1,65 @@
+<h1>Your tasks here</h1>
+<br />
+<div class="container-tasks">
+    <div class="task-container">
+        <p class="task-container-name">Ready</p> 
+        <div class="task-container task-container-ready" id="container-ready">
+            <p class="d-none" id="task-ready-delimiter">Ready</p> 
+        </div>         
+        <div class="task-container-button" id="button-container-ready" >
+            <button id="add-new-task" class="btn btn-light task-button-edit">
+                <svg id="svg-new-task" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 1 16 16" fill="none">
+                    <path d="M14 7H9V2C9 1.448 8.552 1 8 1C7.448 1 7 1.448 7 2V7H2C1.448 7 1 7.448 1 8C1 8.552 1.448 9 2 9H7V14C7 14.552 7.448 15 8 15C8.552 15 9 14.552 9 14V9H14C14.552 9 15 8.552 15 8C15 7.448 14.552 7 14 7Z" fill="#5E6C84"/>
+                </svg>          
+                <span class="task-container-button-text" id="ready-button-text">Add card</span> 
+            </button>
+        </div>
+    </div>  
+    <div class="task-container">
+        <p class="task-container-name">Started</p>
+        <div class="task-container task-container-ready" id="container-started">
+            <p class="d-none" id="task-started-delimiter">Started</p> 
+        </div>         
+        <div class="task-container-button dropdown" id="button-container-started" >
+            <!--div class="task-container-button dropdown" id="button-container-started"></div>-->
+            <button id="started-new-task" class="btn btn-light task-button-edit"  data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg id="svg-started-task" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 1 16 16" fill="none">
+                    <path d="M14 7H9V2C9 1.448 8.552 1 8 1C7.448 1 7 1.448 7 2V7H2C1.448 7 1 7.448 1 8C1 8.552 1.448 9 2 9H7V14C7 14.552 7.448 15 8 15C8.552 15 9 14.552 9 14V9H14C14.552 9 15 8.552 15 8C15 7.448 14.552 7 14 7Z" fill="#5E6C84"/>
+                </svg>          
+                <span class="task-container-button-text" id="started-button-text">Add card</span>                            
+            </button>
+            <button id="started-submit" class="btn btn-primary d-none">                      
+                <span class="task-container-button-text button-span__clicked">Submit</span>                            
+            </button>
+            <div id = "dropdown-menu-started" class="dropdown-menu" aria-labelledby="started-new-task">
+                <ul class="text-small shadow list-group">
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Restart</a></li>
+                </ul>                
+            </div>           
+        </div>        
+    </div> 
+    <div class="task-container">
+        <p class="task-container-name">Finished</p>
+        <div class="task-container task-container-ready" id="container-finished">
+            <p class="d-none" id="task-finished-delimiter">Started</p> 
+        </div>              
+        <div class="task-container-button dropdown" id="button-container-finished" >
+            <button id="finished-new-task" class="btn btn-light task-button-edit"  data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg id="svg-finished-task" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 1 16 16" fill="none">
+                    <path d="M14 7H9V2C9 1.448 8.552 1 8 1C7.448 1 7 1.448 7 2V7H2C1.448 7 1 7.448 1 8C1 8.552 1.448 9 2 9H7V14C7 14.552 7.448 15 8 15C8.552 15 9 14.552 9 14V9H14C14.552 9 15 8.552 15 8C15 7.448 14.552 7 14 7Z" fill="#5E6C84"/>
+                </svg>          
+                <span class="task-container-button-text" id="finished-button-text">Add card</span> 
+            </button>
+            <button id="finished-submit" class="btn btn-primary d-none">                      
+                <span class="task-container-button-text button-span__clicked">Submit</span>                            
+            </button>
+            <div id = "dropdown-menu-finished" class="dropdown-menu" aria-labelledby="finished-new-task">
+                <ul class="text-small shadow list-group">
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Restart</a></li>
+                </ul>                
+            </div>
+        </div>
+    </div>
+</div>
